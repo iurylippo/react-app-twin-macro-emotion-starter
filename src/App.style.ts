@@ -1,4 +1,4 @@
-import tw, { styled }  from 'twin.macro'
+import tw, { styled } from 'twin.macro';
 
 export const AppTitle = tw.h1`
     text-2xl
@@ -6,13 +6,15 @@ export const AppTitle = tw.h1`
 `;
 
 interface AppConditionalProps {
-    hasBorder: boolean
+  hasBorder: boolean;
 }
 
-export const AppConditional = styled.div(({ hasBorder }: AppConditionalProps) => [
+export const AppConditional = styled.div(
+  ({ hasBorder }: AppConditionalProps) => [
     tw`text-white`,
     hasBorder && tw`bg-purple-300`,
-]);
+  ],
+);
 
 export const AppButton = tw.a`
     rounded 
@@ -23,4 +25,4 @@ export const AppButton = tw.a`
     text-white 
     font-bold 
     bg-primary-500
-`
+`;
