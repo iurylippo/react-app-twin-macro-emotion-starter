@@ -1,4 +1,4 @@
-import { AppButton, AppTitle } from "./App.style";
+import { AppButton, AppConditional, AppTitle } from "./App.style";
 
 export function App() {
   return (
@@ -6,9 +6,12 @@ export function App() {
       <AppTitle>
         Hello world
       </AppTitle>
-      <AppButton tw="bg-primary-300">
+      <AppButton>
         Click
       </AppButton>
+      <AppConditional hasBorder>
+        TESTE
+      </AppConditional>
     </div>
   );
 }
